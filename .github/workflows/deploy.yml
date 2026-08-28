@@ -20,19 +20,16 @@ jobs:
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           FTP_PATH: ${{ secrets.FTP_PATH }}
         run: |
-          lftp -e "
-            set ssl:verify-certificate no;
-            set ftp:ssl-allow yes;
-            set ftp:ssl-protect-data yes;
-            set ftp:passive-mode yes;
-            set net:max-retries 5;
-            set net:reconnect-interval-base 5;
-            set net:timeout 20;
-            open -u \"$FTP_USERNAME\",\"$FTP_PASSWORD\" $FTP_SERVER;
-            mirror -R --verbose --parallel=1 --only-newer \
-              --exclude-glob .git* \
-              --exclude-glob .github/ \
-              \"beantville datapack/\" \
-              \"$FTP_PATH\";
+          cd "beantville datapack"
+          lftp -c "
+            set ssl:verify-certificate no
+            set ftp:ssl-allow yes
+            set ftp:ssl-protect-data yes
+            set ftp:passive-mode yes
+            set net:max-retries 5
+            set net:reconnect-interval-base 5
+            set net:timeout 20
+            open -u ${FTP_USERNAME},${FTP_PASSWORD} ${FTP_SERVER}
+            mirror -R --verbose --parallel=1 --only-newer . ${FTP_PATH}
             bye
           "
