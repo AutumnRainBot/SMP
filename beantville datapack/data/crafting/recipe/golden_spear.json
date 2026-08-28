@@ -53,7 +53,10 @@
           "color": "green",
           "italic": false
         }
-      ]
+      ],
+      "minecraft:custom_data": {
+        "magic_spear_babylon": true
+      }
     }
   }
 }
