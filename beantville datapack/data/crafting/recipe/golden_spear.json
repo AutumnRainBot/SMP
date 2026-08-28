@@ -18,9 +18,6 @@
     "id": "minecraft:golden_spear",
     "count": 1,
     "components": {
-      "minecraft:custom_data": {
-        "magic_spear_babylon": true
-      },
       "minecraft:custom_name": {
         "text": "Spear of Babylon",
         "italic": false,
