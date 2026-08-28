@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "hit": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "items": "minecraft:diamond_sword",
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "magic_sword_scimitar": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "crafting:ScimitarHit"
+    }
+}

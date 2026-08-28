@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "NGo",
+    "gnA"
+  ],
+  "key": {
+    "#": "minecraft:heavy_core",
+    "N": "minecraft:nether_star",
+    "G": "minecraft:netherite_spear",
+    "o": "minecraft:echo_shard",
+    "g": "minecraft:golden_horse_armor",
+    "n": "minecraft:gold_block",
+    "A": "minecraft:golden_nautilus_armor"
+  },
+  "result": {
+    "id": "minecraft:golden_spear",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Spear of Babylon",
+        "italic": false,
+        "color": "red"
+      },
+      "minecraft:enchantments": {
+        "crafting:lunge": 5
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "slot": "mainhand",
+          "id": "crafting:spear_of_babylon_damage",
+          "amount": 9.0,
+          "operation": "add_value"
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "slot": "mainhand",
+          "id": "crafting:spear_of_babylon_speed",
+          "amount": -2.95,
+          "operation": "add_value"
+        }
+      ],
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:attribute_modifiers"
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "10 Attack Damage",
+          "color": "green",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

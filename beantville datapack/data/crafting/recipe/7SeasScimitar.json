@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#Hh",
+    "Nno",
+    "DdA"
+  ],
+  "key": {
+    "#": "minecraft:nautilus_shell",
+    "H": "minecraft:heavy_core",
+    "h": "minecraft:heart_of_the_sea",
+    "N": "minecraft:nether_star",
+    "n": "minecraft:netherite_sword",
+    "o": "minecraft:echo_shard",
+    "D": "minecraft:diamond_horse_armor",
+    "d": "minecraft:diamond_block",
+    "A": "minecraft:diamond_nautilus_armor"
+  },
+  "result": {
+    "id": "minecraft:diamond_sword",
+    "components": {
+      "minecraft:custom_data": {
+        "magic_sword": true
+      },
+      "minecraft:item_name": "Épée magique",
+      "minecraft:enchantment_glint_override": true
+    }
+  }
+}

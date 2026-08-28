@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "crafting:golden_spear"
+      }
+    }
+  },
+  "rewards": {
+    "function": "crafting:golden_spear_crafted"
+  }
+}
