@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ESE",
+    "oTC",
+    "###"
+  ],
+  "key": {
+    "E": "minecraft:elytra",
+    "S": "minecraft:sponge",
+    "o": "minecraft:ender_pearl",
+    "T": "minecraft:trident",
+    "C": "minecraft:chorus_fruit",
+    "#": "minecraft:totem_of_undying"
+  },
+  "result": {
+    "id": "minecraft:trident"
+  }
+}
