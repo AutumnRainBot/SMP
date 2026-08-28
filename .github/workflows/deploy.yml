@@ -10,19 +10,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: beantville datapack/
-          server-dir: ${{ secrets.FTP_PATH }}
-          protocol: ftps
-          port: 21
-          security: loose
-          timeout: 60000
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.github/**
-            **/README.md
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Upload datapack
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_PATH: ${{ secrets.FTP_PATH }}
+        run: |
+          lftp -e "
+            set ssl:verify-certificate no;
+            set ftp:ssl-allow yes;
+            set ftp:ssl-protect-data yes;
+            set ftp:passive-mode yes;
+            set net:max-retries 5;
+            set net:reconnect-interval-base 5;
+            set net:timeout 20;
+            open -u \"$FTP_USERNAME\",\"$FTP_PASSWORD\" $FTP_SERVER;
+            mirror -R --verbose --parallel=1 --only-newer \
+              --exclude-glob .git* \
+              --exclude-glob .github/ \
+              \"beantville datapack/\" \
+              \"$FTP_PATH\";
+            bye
+          "
