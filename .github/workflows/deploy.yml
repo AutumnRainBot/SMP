@@ -1,0 +1,25 @@
+name: Deploy datapack
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: Beanville/
+          server-dir: ${{ secrets.FTP_PATH }}
+          protocol: ftp
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/README.md
