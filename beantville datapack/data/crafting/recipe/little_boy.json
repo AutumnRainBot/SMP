@@ -14,6 +14,18 @@
     "f": "minecraft:firework_rocket"
   },
   "result": {
-    "id": "minecraft:crossbow"
+    "id": "minecraft:crossbow",
+    "components": {
+      "minecraft:custom_data": {
+        "little_boy": true
+      },
+      "minecraft:custom_name": {
+        "text": "Little Boy",
+        "italic": false,
+        "color": "red"
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:enchantment_glint_override": true
+    }
   }
 }
