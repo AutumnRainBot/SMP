@@ -15,7 +15,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: Beanville/
+          local-dir: Beantville/
           server-dir: ${{ secrets.FTP_PATH }}
           protocol: ftp
           exclude: |
