@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#S#",
+    "N)M",
+    "oRo"
+  ],
+  "key": {
+    "#": "minecraft:dragon_head",
+    "S": "minecraft:sculk_shrieker",
+    "N": "minecraft:nether_star",
+    ")": "minecraft:bow",
+    "M": "minecraft:music_disc_5",
+    "o": "minecraft:echo_shard",
+    "R": "minecraft:recovery_compass"
+  },
+  "result": {
+    "id": "minecraft:bow"
+  }
+}
