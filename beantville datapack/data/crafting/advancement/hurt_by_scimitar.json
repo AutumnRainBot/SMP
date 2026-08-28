@@ -22,6 +22,6 @@
         }
     },
     "rewards": {
-        "function": "crafting:ScimitarHurt"
+        "function": "crafting:scimitar_hurt"
     }
 }
