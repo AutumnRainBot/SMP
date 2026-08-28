@@ -22,7 +22,12 @@
       "minecraft:custom_data": {
         "magic_sword_scimitar": true
       },
-      "minecraft:item_name": "7seas scimitar",
+      "minecraft:custom_name": {
+        "text": "7 Seas Scimitar",
+        "italic": false,
+        "color": "blue"
+      },
+      "minecraft:unbreakable": {},
       "minecraft:enchantment_glint_override": true
     }
   }
