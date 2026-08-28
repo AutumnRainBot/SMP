@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#H#",
+    "T)T",
+    "FfF"
+  ],
+  "key": {
+    "#": "minecraft:burn_pottery_sherd",
+    "H": "minecraft:heavy_core",
+    "T": "minecraft:tnt",
+    ")": "minecraft:crossbow",
+    "F": "minecraft:fire_charge",
+    "f": "minecraft:firework_rocket"
+  },
+  "result": {
+    "id": "minecraft:crossbow"
+  }
+}
