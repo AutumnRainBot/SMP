@@ -1,2 +1,2 @@
-advancement revoke @s only crafting:HurtByScimitar
-function crafting:ScimitarRandomBadEffects
+advancement revoke @s only crafting:hurt_by_scimitar
+function crafting:scimitar_random_bad_effects
