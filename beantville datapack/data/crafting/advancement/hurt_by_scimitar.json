@@ -5,14 +5,12 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "type": "minecraft:player",
+                        "entity_type": "minecraft:player",
                         "equipment": {
                             "mainhand": {
                                 "items": "minecraft:diamond_sword",
                                 "predicates": {
-                                    "minecraft:custom_data": {
-                                        "magic_sword_scimitar": true
-                                    }
+                                    "minecraft:custom_data": { "magic_sword_scimitar": true }
                                 }
                             }
                         }
