@@ -1,4 +1,4 @@
-execute store result score @s scimitar.procA run random value 0..1
+execute store result score @s scimitar.procA run random value 0..4
 execute if score @s scimitar.procA matches 0 run return fail
 
 execute store result score @s scimitar.rngA run random value 0..7
