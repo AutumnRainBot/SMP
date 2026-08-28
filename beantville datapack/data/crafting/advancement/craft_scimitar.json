@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "crafting:ScimitarDiscover"
+    "function": "crafting:scimitar_discover"
   }
 }
