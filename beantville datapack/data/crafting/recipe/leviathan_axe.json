@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#o#",
+    "CSC",
+    "=/="
+  ],
+  "key": {
+    "#": "minecraft:blue_ice",
+    "o": "minecraft:deepslate_emerald_ore",
+    "C": "minecraft:crying_obsidian",
+    "S": "minecraft:stone_axe",
+    "=": "minecraft:netherite_ingot",
+    "/": "minecraft:breeze_rod"
+  },
+  "result": {
+    "id": "minecraft:stone_axe"
+  }
+}
