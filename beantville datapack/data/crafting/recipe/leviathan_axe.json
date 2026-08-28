@@ -14,8 +14,6 @@
     "/": "minecraft:breeze_rod"
   },
   "result": {
-    "id": "minecraft:stone_axe",
-    "components": {}
-      
+    "id": "minecraft:stone_axe"
   }
 }
