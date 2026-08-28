@@ -1,1 +1,1 @@
-scoreboard players set @s crafting.lunge_cd 50
+scoreboard players set @s crafting.lunge_cd 20
