@@ -14,6 +14,8 @@
     "#": "minecraft:totem_of_undying"
   },
   "result": {
-    "id": "minecraft:trident"
+    "id": "minecraft:trident",
+       "components": {
+         
   }
 }
