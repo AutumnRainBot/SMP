@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "hit": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "entity_type": "minecraft:player",
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:golden_spear",
+                                "predicates": {
+                                    "minecraft:custom_data": { "magic_spear_babylon": true }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "crafting:spear_hurt"
+    }
+}
