@@ -27,9 +27,7 @@
       },
       "minecraft:unbreakable": {},
       "minecraft:enchantments": {
-        "levels": {
-          "crafting:soul_beam_infinity": 1
-        }
+        "crafting:soul_beam_infinity": 1
       }
     }
   }
