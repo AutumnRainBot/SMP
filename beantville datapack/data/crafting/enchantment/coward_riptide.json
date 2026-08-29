@@ -24,9 +24,8 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "type_specific": {
-              "type": "minecraft:player",
-              "advancements": {
+            "minecraft:type_specific/player": {
+              "minecraft:advancements": {
                 "crafting:coward_riptide_use": true
               }
             }
