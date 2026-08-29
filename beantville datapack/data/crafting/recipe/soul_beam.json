@@ -26,7 +26,10 @@
         "color": "blue"
       },
       "minecraft:unbreakable": {},
-      "minecraft:enchantment_glint_override": true
+      "minecraft:enchantments": {
+        "levels": {
+          "crafting:soul_beam_infinity": 1
+      }
     }
   }
 }
