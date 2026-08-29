@@ -14,21 +14,22 @@
     "o": "minecraft:echo_shard",
     "R": "minecraft:recovery_compass"
   },
-"result": {
-  "id": "minecraft:bow",
-  "components": {
-    "minecraft:custom_data": {
-      "soul_beam": true
-    },
-    "minecraft:custom_name": {
-      "text": "Soul Beam",
-      "italic": false,
-      "color": "blue"
-    },
-    "minecraft:unbreakable": {},
-    "minecraft:enchantments": {
-      "levels": {
-        "crafting:soul_beam_infinity": 1
+  "result": {
+    "id": "minecraft:bow",
+    "components": {
+      "minecraft:custom_data": {
+        "soul_beam": true
+      },
+      "minecraft:custom_name": {
+        "text": "Soul Beam",
+        "italic": false,
+        "color": "blue"
+      },
+      "minecraft:unbreakable": {},
+      "minecraft:enchantments": {
+        "levels": {
+          "crafting:soul_beam_infinity": 1
+        }
       }
     }
   }
