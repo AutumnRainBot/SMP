@@ -25,11 +25,7 @@
         "color": "gray"
       },
       "minecraft:unbreakable": {},
-      "minecraft:enchantment_glint_override": true,
-      "minecraft:enchantments": {
-        "minecraft:riptide": 3
-      }
-    },
-    "count": 1
+      "minecraft:enchantment_glint_override": true
+    }
   }
 }
