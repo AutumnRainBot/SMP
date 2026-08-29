@@ -28,6 +28,11 @@
       "minecraft:unbreakable": {},
       "minecraft:enchantments": {
         "crafting:soul_beam_infinity": 1
+      },
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:enchantments"
+        ]
       }
     }
   }
