@@ -10,3 +10,6 @@ execute as @a[scores={soul_beam_shots=1..,soul_beam_charge=1..19}] run scoreboar
 # Reset bow-use statistic
 scoreboard players set @a[scores={soul_beam_shots=1..}] soul_beam_shots 0
 
+# Clear entities hit by the previous Soul Beam
+tag @e[tag=soul_beam_hit] remove soul_beam_hit
+
