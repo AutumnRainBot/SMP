@@ -15,5 +15,8 @@
         }
       }
     }
+  },
+  "rewards": {
+    "function": "crafting:coward_riptide"
   }
 }
