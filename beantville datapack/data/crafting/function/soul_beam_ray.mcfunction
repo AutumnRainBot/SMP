@@ -1,18 +1,18 @@
-# Stop after 40 blocks
+# Maximum 40 block range
 execute if score @s soul_beam_ray matches 80.. run return 0
 
-# Stop when hitting a solid block
+# Stop at blocks
 execute unless block ~ ~ ~ #minecraft:replaceable run return 0
 
-# Draw the beam
+# Visual
 particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1 force
 
-# Damage mobs near the beam
-execute as @e[distance=..1.25,type=!minecraft:player,tag=!soul_beam_hit] at @s run damage @s 10 minecraft:sonic_boom
+# Damage mobs at the current ray position
+execute as @e[type=!minecraft:player,distance=..1.25,tag=!soul_beam_hit] run damage @s 10 minecraft:sonic_boom
 
-# Remember which mobs were hit
-execute as @e[distance=..1.25,type=!minecraft:player,tag=!soul_beam_hit] run tag @s add soul_beam_hit
+# Mark them as hit
+execute as @e[type=!minecraft:player,distance=..1.25,tag=!soul_beam_hit] run tag @s add soul_beam_hit
 
-# Move forward along the shooter's looking direction
+# Advance
 scoreboard players add @s soul_beam_ray 1
 execute positioned ^ ^ ^0.5 run function crafting:soul_beam_ray
