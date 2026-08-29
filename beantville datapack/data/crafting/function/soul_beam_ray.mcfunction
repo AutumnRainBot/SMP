@@ -15,4 +15,4 @@ execute as @e[distance=..1.25,type=!minecraft:player,tag=!soul_beam_hit] run tag
 
 # Move the ray 0.5 blocks forward
 scoreboard players add @s soul_beam_ray 1
-positioned ^ ^ ^0.5 run function crafting:soul_beam_ray
+execute positioned ^ ^ ^0.5 run function crafting:soul_beam_ray
