@@ -1,5 +1,5 @@
 scoreboard players add @a crafting.lunge_cd 0
-scoreboard players remove @a[scores={crafting.lunge_cd=1..}] crafting.lunge_cd 50
+scoreboard players remove @a[scores={crafting.lunge_cd=1..}] crafting.lunge_cd 1
 
 # Soul Beam: fully charged shot released
 execute as @a[scores={soul_beam_shots=1..,soul_beam_charge=20}] run function crafting:soul_beam_fire
