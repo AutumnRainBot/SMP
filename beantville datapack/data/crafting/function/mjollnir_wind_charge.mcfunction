@@ -1,6 +1,16 @@
-# Always reset the advancement so another right click can be detected.
+# Reset the right-click advancement so it can trigger again.
 advancement revoke @s only crafting:mjollnir_wind_charge
 
-# 10-tick cooldown prevents repeated launches while holding right click.
-execute if score @s mjollnir.wind_cd matches 0 run execute at @s run summon minecraft:wind_charge ~ ~-0.5 ~ {power:[0.0d,-0.1d,0.0d]}
-execute if score @s mjollnir.wind_cd matches 0 run scoreboard players set @s mjollnir.wind_cd 10
+# Launch a Wind Charge straight upward from directly underneath the player.
+summon minecraft:wind_charge ~ ~-0.45 ~ {Motion:[0.0d,1.0d,0.0d],Tags:["mjollnir_wind"]}
+
+# Make the summoned Wind Charge belong to the player who activated Mjollnir.
+data modify entity @e[type=minecraft:wind_charge,tag=mjollnir_wind,sort=nearest,limit=1] Owner set from entity @s UUID
+
+tag @e[type=minecraft:wind_charge,tag=mjollnir_wind,sort=nearest,limit=1] remove mjollnir_wind
+
+# Briefly protect the Mjollnir user from the Wind Charge's own explosion.
+effect give @s minecraft:resistance 2 4 true
+
+# Cooldown.
+scoreboard players set @s mjollnir.wind_cd 10
