@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "crafting:soul_beam"
+      }
+    }
+  },
+  "rewards": {
+    "function": "crafting:soul_beam_crafted"
+  }
+}
