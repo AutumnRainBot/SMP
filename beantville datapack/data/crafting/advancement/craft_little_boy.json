@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "crafting:little_boy"
+      }
+    }
+  },
+  "rewards": {
+    "function": "crafting:little_boy_crafted"
+  }
+}
