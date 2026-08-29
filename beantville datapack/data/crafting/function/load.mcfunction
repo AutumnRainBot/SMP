@@ -11,4 +11,4 @@ scoreboard objectives add scimitar.rngA dummy
 
 #soul beam
 scoreboard objectives add soul_beam_charge dummy
-scoreboard objectives add soul_beam_shot used:bow
+scoreboard objectives add soul_beam_shots minecraft.used:minecraft.bow
