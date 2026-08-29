@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "shield_stunned": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": true,
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:stone_axe",
+                "components": {
+                  "minecraft:custom_data": {
+                    "leviathan_axe": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "crafting:leviathan_axe_shield_stun"
+  }
+}
