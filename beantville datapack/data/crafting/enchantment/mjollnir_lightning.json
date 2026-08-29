@@ -1,0 +1,62 @@
+{
+  "anvil_cost": 0,
+  "description": {
+    "text": ""
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "crafting:mjollnir_lightning_protect"
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:mace_smash",
+                "expected": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "crafting:mjollnir_lightning"
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:mace_smash",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:mace",
+  "weight": 1
+}
