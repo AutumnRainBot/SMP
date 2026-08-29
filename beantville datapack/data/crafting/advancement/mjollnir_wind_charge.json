@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "right_click": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:mace"
+          ],
+          "predicates": {
+            "minecraft:custom_data": {
+              "mjollnir": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "crafting:mjollnir_wind_charge"
+  }
+}
