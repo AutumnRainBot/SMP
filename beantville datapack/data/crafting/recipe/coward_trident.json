@@ -28,35 +28,7 @@
       "minecraft:enchantment_glint_override": true,
       "minecraft:enchantments": {
         "crafting:coward_riptide": 3
-      },
-      "minecraft:consumable": {
-        "consume_seconds": 0.05,
-        "animation": "trident",
-        "has_consume_particles": false,
-        "sound": "minecraft:item.trident.riptide_3"
-      },
-      "minecraft:use_cooldown": {
-        "seconds": 0.5,
-        "cooldown_group": "crafting:coward_trident"
-      },
-      "minecraft:use_remainder": {
-        "id": "minecraft:trident",
-        "components": {
-          "minecraft:custom_data": {
-            "coward_trident": true
-          },
-          "minecraft:custom_name": {
-            "text": "Coward Trident",
-            "italic": false,
-            "color": "gray"
-          },
-          "minecraft:unbreakable": {},
-          "minecraft:enchantment_glint_override": true,
-          "minecraft:enchantments": {
-            "crafting:coward_riptide": 3
-          }
         }
       }
     }
   }
-}
