@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "crafting:mjollnir"
+      }
+    }
+  },
+  "rewards": {
+    "function": "crafting:mjollnir_crafted"
+  }
+}
