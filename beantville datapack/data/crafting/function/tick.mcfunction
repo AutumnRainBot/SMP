@@ -1,6 +1,6 @@
 scoreboard players add @a crafting.lunge_cd 0
 scoreboard players remove @a[scores={crafting.lunge_cd=1..}] crafting.lunge_cd 1
-execute as @e[type=minecraft:arrow,nbt={weapon:{id:"minecraft:bow"},item:{id:"minecraft:bow"}}] unless data entity @s weapon.components."minecraft:custom_data"{soul_beam:true} run kill @s
+
 # Soul Beam: fully charged shot released
 execute as @a[scores={soul_beam_shots=1..,soul_beam_charge=20}] run function crafting:soul_beam_fire
 
