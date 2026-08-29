@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "using": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:bow",
+          "predicates": {
+            "minecraft:custom_data": {
+              "soul_beam": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "crafting:soul_beam_charge"
+  }
+}
