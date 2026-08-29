@@ -1,2 +1,2 @@
-damage @s 10 crafting:soul_beam
+damage @s 10 minecraft:sonic_boom
 tag @s add soul_beam_hit
