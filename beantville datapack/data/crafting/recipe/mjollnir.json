@@ -23,7 +23,7 @@
       "minecraft:custom_name": {
         "text": "Mjöllnir",
         "italic": false,
-        "color": "blue"
+        "color": "aqua"
       },
       "minecraft:unbreakable": {},
       "minecraft:enchantment_glint_override": true
