@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "right_click": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:trident"
+          ],
+          "predicates": {
+            "minecraft:custom_data": {
+              "coward_trident": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
