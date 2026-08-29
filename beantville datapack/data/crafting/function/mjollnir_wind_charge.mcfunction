@@ -9,8 +9,5 @@ data modify entity @e[type=minecraft:wind_charge,tag=mjollnir_wind,sort=nearest,
 
 tag @e[type=minecraft:wind_charge,tag=mjollnir_wind,sort=nearest,limit=1] remove mjollnir_wind
 
-# Briefly protect the Mjollnir user from the Wind Charge's own explosion.
-effect give @s minecraft:resistance 2 4 true
-
 # Cooldown.
 scoreboard players set @s mjollnir.wind_cd 10
