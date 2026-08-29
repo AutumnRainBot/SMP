@@ -25,7 +25,17 @@
         "color": "red"
       },
       "minecraft:unbreakable": {},
-      "minecraft:enchantment_glint_override": true
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:custom_model_data": {
+        "strings": [
+          "little_boy"
+        ]
+      },
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:enchantments"
+        ]
+      }
     }
   }
 }
