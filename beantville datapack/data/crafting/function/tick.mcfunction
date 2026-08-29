@@ -8,3 +8,4 @@ execute as @a[scores={soul_beam_shots=1..,soul_beam_charge=20}] run function cra
 scoreboard players set @a[scores={soul_beam_shots=1..,soul_beam_charge=1..19}] soul_beam_charge 0
 # Reset bow-use statistic
 scoreboard players set @a[scores={soul_beam_shots=1..}] soul_beam_shots 0
+tag @e[tag=soul_beam_hit] remove soul_beam_hit
