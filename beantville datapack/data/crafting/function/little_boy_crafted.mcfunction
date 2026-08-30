@@ -1,4 +1,4 @@
-scoreboard players set @s crafting.little_boy_arrow 1
+give @s minecraft:arrow 1
 
 # Protect everyone from the explosion
 effect give @a minecraft:resistance 5 4 true
