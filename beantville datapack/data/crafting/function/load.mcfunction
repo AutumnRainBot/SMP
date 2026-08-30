@@ -16,3 +16,6 @@ scoreboard objectives add soul_beam_ray dummy
 
 #Mjollnir wind charge cooldown
 scoreboard objectives add mjollnir.wind_cd dummy
+
+# Little Boy: delayed arrow grant for freshly crafted weapon
+scoreboard objectives add crafting.little_boy_arrow dummy
