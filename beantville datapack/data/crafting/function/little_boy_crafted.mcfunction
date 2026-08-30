@@ -8,7 +8,7 @@ execute as @a at @s run summon minecraft:tnt ~ ~ ~ {Fuse:10s}
 playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 1
 
 # Give the crafter an arrow
-give @s minecraft:arrow 1
+execute as @s run give @s minecraft:arrow 1
 
 # Announce the crafting
 tellraw @a [{"selector":"@s"},{"text":" has crafted the ","color":"gray"},{"text":"Little Boy","color":"red","italic":false}]
