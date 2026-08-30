@@ -10,5 +10,7 @@ playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 1
 # Announce the crafting
 tellraw @a [{"selector":"@s"},{"text":" has crafted the ","color":"gray"},{"text":"Little Boy","color":"red","italic":false}]
 
+give @s minecraft:arrow 1
+
 # Allow the crafting advancement to trigger again
 advancement revoke @s only crafting:craft_little_boy
