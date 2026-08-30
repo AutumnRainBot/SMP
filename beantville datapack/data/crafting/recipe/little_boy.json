@@ -35,7 +35,13 @@
         "hidden_components": [
           "minecraft:enchantments"
         ]
-      }
+      },
+      "minecraft:charged_projectiles": [
+        {
+          "id": "minecraft:arrow",
+          "count": 1
+        }
+      ]
     }
   }
 }
